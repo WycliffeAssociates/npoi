@@ -4,7 +4,8 @@ mono: none
 #must declare version
 dotnet: 2.2.401
 script:
- - dotnet pack ./solution/NPOI.Core.sln -c Release --output ./build
- - cd ./build
+ - dotnet pack ./solution/NPOI.Core.sln -c Release --output $TRAVIS_BUILD_DIR/build
+ - cd $TRAVIS_BUILD_DIR/build
+ - ls *.nupkg
  - PKG_NAME=$(ls *.nupkg)
  - if [ -n "$TRAVIS_TAG" ]; then dotnet nuget push $PKG_NAME -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json; fi
