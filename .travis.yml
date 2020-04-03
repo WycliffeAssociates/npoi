@@ -6,5 +6,4 @@ dotnet: 2.2.401
 script:
  - dotnet pack ./solution/NPOI.Core.sln -c Release --output $TRAVIS_BUILD_DIR/build
  - cd $TRAVIS_BUILD_DIR/build
- - ls *.nupkg
- - for f in *.nupkg ; do dotnet nuget push $f -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json; done
+ - if [ -n "$TRAVIS_TAG" ]; then for f in *.nupkg ; do dotnet nuget push $f -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json; done; fi
