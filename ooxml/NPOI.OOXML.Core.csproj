@@ -2,17 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>WycliffeAssociates.NPOI</PackageId>
-    <Version>2.4.4</Version>
+    <Version>2.4.5</Version>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-	  <AssemblyName>NPOI.OOXML</AssemblyName>
-	  <RootNamespace>NPOI.OOXML</RootNamespace>
+	  <AssemblyName>WycliffeAssociates.NPOI.OOXML</AssemblyName>
+	  <RootNamespace>WycliffeAssociates.NPOI.OOXML</RootNamespace>
 	  <SignAssembly>true</SignAssembly>
 	  <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile></DocumentationFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
