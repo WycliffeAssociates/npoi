@@ -1273,6 +1273,16 @@ namespace NPOI.XWPF.UserModel
             return pr;
         }
 
+        public void SetBidi(bool value)
+        {
+            CT_PPr pr = GetCTPPr();
+            if (pr.bidi == null)
+            {
+                pr.bidi = new CT_OnOff();
+            }
+            pr.bidi.val = value;
+        }
+
 
         /**
          * add a new run at the end of the position of 
