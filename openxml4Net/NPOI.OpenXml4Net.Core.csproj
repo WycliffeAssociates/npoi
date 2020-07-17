@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
 	  <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 	  <AssemblyName>WycliffeAssociates.NPOI.OpenXml4Net</AssemblyName>
-    <Version>2.4.5</Version>
+    <Version>2.4.7</Version>
 	  <SignAssembly>true</SignAssembly>
 	  <AssemblyOriginatorKeyFile>npoi.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
