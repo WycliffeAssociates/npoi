@@ -71,6 +71,7 @@ namespace WycliffeAssociates.NPOI.OOXML.XWPF.Util
 
         public CT_Styles Build()
         {
+            documentStyles.SetStyles(ctStyles);
             return ctStyles;
         }
 
