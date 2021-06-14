@@ -26,7 +26,7 @@ namespace NPOI.XWPF.UserModel
     using NPOI.XWPF.Model;
     using System.Xml.Serialization;
     using System.Diagnostics;
-    using WycliffeAssociates.NPOI.OOXML.XWPF.Model;
+    using WycliffeAssociates.NPOI.OOXML.XWPF.Util;
 
     /**
      * <p>High(ish) level class for working with .docx files.</p>

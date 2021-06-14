@@ -1,9 +1,9 @@
 ﻿using NPOI.OpenXmlFormats.Wordprocessing;
 using NPOI.XWPF.UserModel;
 
-namespace WycliffeAssociates.NPOI.OOXML.XWPF.Model
+namespace WycliffeAssociates.NPOI.OOXML.XWPF.Util
 {
-    class DocumentStylesBuilder
+    public class DocumentStylesBuilder
     {
         private XWPFStyles documentStyles;
         private CT_Styles ctStyles;
