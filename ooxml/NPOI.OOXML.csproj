@@ -330,6 +330,7 @@
     <Compile Include="XWPF\Usermodel\XWPFTableCell.cs" />
     <Compile Include="XWPF\Usermodel\XWPFTableRow.cs" />
     <Compile Include="Util\EnumConverter.cs" />
+    <Compile Include="XWPF\Util\DocumentStylesBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\main\NPOI.csproj">
